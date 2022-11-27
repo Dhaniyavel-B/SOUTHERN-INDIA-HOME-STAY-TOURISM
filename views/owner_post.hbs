@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/cabin.png" type="image/png">
+    <title>Riyaz</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendors/linericon/style.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+
+    <!--Bootstrap-->
+    <link href="/form link/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--datatable css-->
+    <link href="/form link/Datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--fontawesome css-->
+    <link href="/form link/fontawesome/css/all.css" rel="stylesheet" />
+    <!--Custom css-->
+    <link href="/form link/Custom.css" rel="stylesheet" />
+    <!--jquery-->
+    <script src="/form link/Bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <!--popper js-->
+    <script src="/form link/Bootstrap/js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="/form link/Bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!--================Header Area =================-->
+    <header class="header_area">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light nav-bk3">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="home"><img src="/cabin.png" alt="" width="65"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div>
+                    <h5 style="color:white;">SOUTHERN INDIA HOMESTAY TOURISM</h5>
+                </div>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#book">Type Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #submit {
+            background-color: rgb(189, 228, 189);
+            border-radius: 5px;
+        }
+
+        #submit:hover {
+            width: 100px;
+            height: 40px;
+        }
+
+        .nav-bk3 {
+
+            background: #00F260;
+
+            background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+
+            background: linear-gradient(to right, #0575E6, #00F260);
+
+
+
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+     <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+                <div class="card-body py-4 px-4 px-md-5">
+      
+                  <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                    <i class="fas fa-check-square me-1"></i>
+                    <u>My Todo-s</u>
+                  </p>
+                <form action="/owner" method="post">
+                 <div class="row">
+                    <div class="col-md-6">
+                        <label>owner ID</label>
+                        <div class="form-group">
+                            <input Class="form-control" ID="owner_id" name="owner_id" type="number" placeholder="owner ID"></input>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Home address</label>
+                        <div class="form-group">
+                            <input Class="form-control" ID="Details" name="Details" placeholder="Details"
+                                Type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <center>
+                            <div class="form-group">
+                                <Button class="btn btn-primary btn-block btn-lg" ID="Button1" type="submit"
+                                    Text="Submit">Submit</Button>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                </form>
+                  <hr class="my-4">
+      
+                  <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
+                    <p class="small mb-0 me-2 text-muted">Filter</p>
+                    <select class="select">
+                      <option value="1">All</option>
+                      <option value="2">Completed</option>
+                      <option value="3">Active</option>
+                      <option value="4">Has due date</option>
+                    </select>
+                    <p class="small mb-0 ms-4 me-2 text-muted">Sort</p>
+                    <select class="select">
+                      <option value="1">Added date</option>
+                      <option value="2">Due date</option>
+                    </select>
+                    <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending"><i
+                        class="fas fa-sort-amount-down-alt ms-2"></i></a>
+                  </div>
+      
+                  <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
+                    <li
+                      class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
+                          aria-label="..." checked />
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+                      <p class="lead fw-normal mb-0">madurai bustop near</p>
+                    </li>
+                    <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="d-flex flex-row justify-content-end mb-1">
+                        <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                            class="fas fa-pencil-alt me-3"></i></a>
+                        <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
+                            class="fas fa-trash-alt"></i></a>
+                      </div>
+                      <div class="text-end text-muted">
+                        <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                          <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal rounded-0">
+                    <li
+                      class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked2"
+                          aria-label="..." />
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+                      <p class="lead fw-normal mb-0">tanjavur</p>
+                    </li>
+                    <li class="list-group-item px-3 py-1 d-flex align-items-center border-0 bg-transparent">
+                      <div
+                        class="py-2 px-3 me-2 border border-warning rounded-3 d-flex align-items-center bg-light">
+                        <p class="small mb-0">
+                          <a href="#!" data-mdb-toggle="tooltip" title="Due on date">
+                            <i class="fas fa-hourglass-half me-2 text-warning"></i>
+                          </a>
+                          28th Jun 2020
+                        </p>
+                      </div>
+                    </li>
+                    <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="d-flex flex-row justify-content-end mb-1">
+                        <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                            class="fas fa-pencil-alt me-3"></i></a>
+                        <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
+                            class="fas fa-trash-alt"></i></a>
+                      </div>
+                      <div class="text-end text-muted">
+                        <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                          <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal rounded-0 mb-2">
+                    <li
+                      class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked3"
+                          aria-label="..." />
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+                      <p class="lead fw-normal mb-0 bg-light w-100 ms-n2 ps-2 py-1 rounded">go mahbalpuram 2nd</p>
+                    </li>
+                    <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="d-flex flex-row justify-content-end mb-1">
+                        <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
+                            class="fas fa-trash-alt"></i></a>
+                      </div>
+                      <div class="text-end text-muted">
+                        <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                          <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<br><br>
+    <br>
+    <footer class="footer-area section_gap nav-bk3" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="footer_title">About Southern India Home Stay Tourism</h6>
+                        <p>we help to create a Home stay place for your wishing tourist place in southside</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="footer_title">Navigation Links</h6>
+                        <div class="row">
+                            <div class="col-4">
+                                <ul class="list_style">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Facilitas</a></li>
+                                    <li><a href="#">Room and class</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul class="list_style">
+                                    <li><a href="#">Tel: Telp. (0753) 65718</a></li>
+                                    <li><a href="#">Reservation. (0753) 65718</a></li>
+                                    <li><a href="#">Riyaz@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="footer_title">Newsletter</h6>
+                        <p>For business professionals caught between high OEM price and mediocre print and graphic
+                            output, </p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="subscribe_form relative">
+                                <div class="input-group d-flex flex-row">
+                                    <input name="EMAIL" placeholder="Enter your Email Address"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
+                                        required="" type="email">
+                                    <br>
+                                    <br>
+                                    <textarea id="w3review" name="w3review" rows="4" cols="50"
+                                        placeholder="Enter your queries"></textarea>
+                                    <button id="submit">Submit</button>
+                                </div>
+
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border_line"></div>
+            <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                <p class="col-lg-8 col-sm-12 footer-text m-0">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> Southern Homestay Tourism | by <span
+                        class="header-text"><a href="www.riyazdeveloper.com">Riyaz</a></span></a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                    <a class="navbar-brand logo_h" href="#"><img src="/Social icon/facebook.png" alt="" width="40"></a>
+                    <a class="navbar-brand logo_h" href="#"><img src="/Social icon/twitter.png" alt="" width="40"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================ End footer Area  =================-->
+</body>
+
+</html>
